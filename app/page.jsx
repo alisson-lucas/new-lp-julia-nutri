@@ -7,11 +7,11 @@ export default function Home() {
     <div className="bg-white text-gray-800">
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between px-6 lg:px-32 py-16 bg-gray-50 h-[700px] bg-[url('/banner-mobile.png')] lg:bg-[url('/banner.png')] bg-cover lg:bg-center">
-        <div className="max-w-xl">
-          <h1 className="text-4xl font-bold text-green-700 mb-4">
-            Transforme sua saúde com uma alimentação inteligente.
+        <div className="max-w-3xl 2xl:max-w-4xl">
+          <h1 className="text-4xl lg:text-5xl 2xl:text-6xl font-bold font-Playfair text-green-700 mb-4">
+            Transforme sua saúde com <br className='hidden lg:block'/> uma alimentação inteligente.
           </h1>
-          <p className="mb-6 text-lg text-gray-700">
+          <p className="mb-6 text-lg text-gray-700 max-w-xl">
             Descubra como uma nutrição personalizada pode melhorar sua energia,
             disposição e bem-estar. Agende sua consulta agora e dê o primeiro
             passo para a sua melhor versão!
@@ -28,8 +28,8 @@ export default function Home() {
 
       {/* Benefícios */}
       <section className="py-16 px-6 lg:px-32 text-center">
-        <h2 className="text-3xl font-semibold mb-10 text-green-700">Por que me escolher?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <h2 className="text-3xl lg:text-4xl font-semibold font-Playfair mb-20 text-green-700">Por que me escolher?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4  gap-8">
           <Benefit icon={<TbClipboardData color='#15803d' size={64}/>} title="Plano Alimentar Personalizado" />
           <Benefit icon={<MdOutlineHandshake color='#15803d' size={64}/>} title="Acompanhamento Humanizado" />
           <Benefit icon={<MdStarOutline color='#15803d' size={64}/>} title="Resultados Reais e Duradouros" />
@@ -49,7 +49,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col gap-4 md:w-1/2 mt-8 md:mt-0 md:pr-32 text-justify">
-          <h3 className="text-2xl font-semibold mb-4">Prazer, sou Julia Vitória</h3>
+          <h3 className="text-2xl lg:text-3xl font-semibold font-Playfair mb-4">Prazer, sou Julia Vitória</h3>
           <p className="text-gray-700">
             Com experiência na área clínica, ajudo pacientes a conquistarem mais saúde, energia e autoestima sem dietas restritivas ou fórmulas milagrosas — apenas com ciência, empatia e um plano alimentar que respeita sua individualidade.
           </p>
@@ -61,40 +61,40 @@ export default function Home() {
           </p>
           <a
             href="#agendamento"
-            className="bg-green-600 text-white px-6 py-3 w-full lg:w-4/12 flex items-center justify-center rounded-md hover:bg-green-700"
+            className="bg-green-600 text-white px-6 py-3 w-full lg:w-3/5 2xl:w-4/12 flex items-center justify-center rounded-md hover:bg-green-700"
           >
             Agendar Consulta
           </a>
         </div>
       </section>
 
-      <section class="py-12 mb-10 px-6">
-        <div class="container mx-auto flex flex-col items-center gap-10 ">
-          <span class="text-3xl font-bold text-center text-green-700 my-10">Depoimentos de Clientes Satisfeitos</span>
-          <div class=" flex flex-row flex-wrap gap-4">
+      <section className="py-12 mb-10 px-6">
+        <div className="container mx-auto flex flex-col items-center gap-10 ">
+          <span className="text-3xl lg:text-4xl font-bold font-Playfair text-center text-green-700 my-10">Depoimentos de Clientes Satisfeitos</span>
+          <div className=" flex flex-row flex-wrap gap-4">
             <article
-              class="flex flex-col items-center gap-2 bg-green-700/10 w-full lg:w-[calc(100%/3-16px)] px-8 py-10 rounded-xl">
-              <h2 class="text-lg italic text-center text-gray-600 ">"Depois de 10 Anos de Serviços, Aos 10 Anos de
+              className="flex flex-col items-center gap-2 bg-green-700/10 w-full lg:w-[calc(100%/3-16px)] px-8 py-10 rounded-xl">
+              <h2 className="text-lg italic text-center text-gray-600 ">"Depois de 10 Anos de Serviços, Aos 10 Anos de
                 Serviços"
               </h2>
-              <p class="text-lg font-bold mt-4">Maria Silva</p>
-              <p class="text-sm">Vendedora</p>
+              <p className="text-lg font-bold mt-4">Maria Silva</p>
+              <p className="text-sm">Vendedora</p>
             </article>
             <article
-              class="flex flex-col items-center gap-2 bg-green-700/10 w-full lg:w-[calc(100%/3-16px)] px-8 py-10 rounded-xl">
-              <h2 class="text-lg italic text-center text-gray-600 ">"Depois de 10 Anos de Serviços, Aos 10 Anos de
+              className="flex flex-col items-center gap-2 bg-green-700/10 w-full lg:w-[calc(100%/3-16px)] px-8 py-10 rounded-xl">
+              <h2 className="text-lg italic text-center text-gray-600 ">"Depois de 10 Anos de Serviços, Aos 10 Anos de
                 Serviços"
               </h2>
-              <p class="text-lg font-bold mt-4">Maria Silva</p>
-              <p class="text-sm">Vendedora</p>
+              <p className="text-lg font-bold mt-4">Maria Silva</p>
+              <p className="text-sm">Vendedora</p>
             </article>
             <article
-              class="flex flex-col items-center gap-2 bg-green-700/10 w-full lg:w-[calc(100%/3-16px)] px-8 py-10 rounded-xl">
-              <h2 class="text-lg italic text-center text-gray-600 ">"Depois de 10 Anos de Serviços, Aos 10 Anos de
+              className="flex flex-col items-center gap-2 bg-green-700/10 w-full lg:w-[calc(100%/3-16px)] px-8 py-10 rounded-xl">
+              <h2 className="text-lg italic text-center text-gray-600 ">"Depois de 10 Anos de Serviços, Aos 10 Anos de
                 Serviços"
               </h2>
-              <p class="text-lg font-bold mt-4">Maria Silva</p>
-              <p class="text-sm">Vendedora</p>
+              <p className="text-lg font-bold mt-4">Maria Silva</p>
+              <p className="text-sm">Vendedora</p>
             </article>
           </div>
         </div>
